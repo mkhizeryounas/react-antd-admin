@@ -81,7 +81,7 @@ class Dashboard extends React.Component {
           <Col xl={12} lg={16}>
             <Card
               bordered={false}
-              title={<p>Progress Report} </p>}
+              title={<p>Progress Report </p>}
               bodyStyle={{ padding: '0 20px 20px' }}
             >
               <Row>

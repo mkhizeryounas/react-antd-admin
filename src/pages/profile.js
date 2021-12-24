@@ -1,17 +1,6 @@
 import * as React from 'react';
 import Layouts from '../components/Layouts';
-import {
-  Row,
-  Col,
-  Card,
-  List,
-  Badge,
-  Button,
-  Tabs,
-  Form,
-  Input,
-  Icon,
-} from 'antd';
+import { Row, Col, Card, List, Button, Form, Input, Icon } from 'antd';
 
 import TextArea from 'antd/lib/input/TextArea';
 import user from '../static/images/user-profile.jpeg';
@@ -23,23 +12,9 @@ const data = [
   'Packaging',
   'Print & Editorial',
 ];
-const { TabPane } = Tabs;
-function callback(key) {
-  console.log(key);
-}
 
 class Profile extends React.Component {
   render() {
-    const formItemLayout = {
-      labelCol: {
-        xs: { span: 24 },
-        sm: { span: 3 },
-      },
-      wrapperCol: {
-        xs: { span: 24 },
-        sm: { span: 115 },
-      },
-    };
     return (
       <Layouts title='profile'>
         <Row>
@@ -48,7 +23,7 @@ class Profile extends React.Component {
               <Row>
                 <Col sm={10} md={8} xl={4} style={{ padding: '20px' }}>
                   <div className='user-image m-b-20'>
-                    <img src={user} />
+                    <img src={user} alt='' />
                   </div>
                   <div className='personal-info'>
                     <h2>Jeremy Rose</h2>
